@@ -15,7 +15,7 @@ NODE_ENV=${NODE_ENV:-development}
 # This adapter performs the production build in a directory prefix 
 # compatible with Heroku dyno runtime, `/app/nuxtjs`.
 #
-# Background: when running `next build`, the current absolute file 
+# Background: when running `nuxt build`, the current absolute file 
 # path is captured for the server-side runtime. Since Heroku builds
 # are performed in a randomly-named temporary directory, these absolute 
 # paths go missing, resulting in server errors.
