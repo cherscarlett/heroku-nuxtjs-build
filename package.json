@@ -1,5 +1,5 @@
 {
-  "name": "rwatts3/heroku-nuxtjs-build",
+  "name": "heroku-nuxtjs-build",
   "version": "0.1.0",
   "description": "Heroku build adapter for Next.js",
   "bin": {
