@@ -1,3 +1,3 @@
-# Heroku Next.js build
+# Heroku Nuxt.js build
 
-Adapter to [build & run Next.js on Heroku](https://github.com/mars/heroku-nextjs).
+Adapter to [build & run Nuxt.js on Heroku](https://github.com/rwatts3/heroku-nuxtjs).

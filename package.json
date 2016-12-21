@@ -1,18 +1,18 @@
 {
-  "name": "@mars/heroku-nextjs-build",
-  "version": "1.0.1",
+  "name": "rwatts3/heroku-nuxtjs-build",
+  "version": "0.1.0",
   "description": "Heroku build adapter for Next.js",
   "bin": {
-    "heroku-nextjs-build": "./bin/heroku-nextjs-build"
+    "heroku-nuxtjs-build": "./bin/heroku-nuxtjs-build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mars/heroku-nextjs-build.git"
+    "url": "git+https://github.com/rwatts3/heroku-nuxtjs-build.git"
   },
-  "author": "Mars Hall",
+  "author": "Ryan Watts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mars/heroku-nextjs-build/issues"
+    "url": "https://github.com/rwatts3/heroku-nuxtjs-build/issues"
   },
-  "homepage": "https://github.com/mars/heroku-nextjs-build#readme"
+  "homepage": "https://github.com/rwatts3/heroku-nuxtjs-build#readme"
 }

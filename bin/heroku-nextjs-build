@@ -13,7 +13,7 @@ set -u
 NODE_ENV=${NODE_ENV:-development}
 
 # This adapter performs the production build in a directory prefix 
-# compatible with Heroku dyno runtime, `/app/nextjs`.
+# compatible with Heroku dyno runtime, `/app/nuxtjs`.
 #
 # Background: when running `next build`, the current absolute file 
 # path is captured for the server-side runtime. Since Heroku builds
@@ -22,7 +22,7 @@ NODE_ENV=${NODE_ENV:-development}
 #
 if [ "$NODE_ENV" = production ]
 then
-  APP_NAMESPACE=nextjs
+  APP_NAMESPACE=nuxtjs
   APP_DIR=/app/$APP_NAMESPACE
   BUILD_DIR=$(pwd)
   RUNTIME_DIR=$BUILD_DIR/$APP_NAMESPACE
@@ -40,14 +40,15 @@ then
   # Put artifacts required by Heroku runtime at root of app.
   cat > package.json <<'HEREDOC'
 {
-  "name": "heroku-nextjs-adapter",
+  "name": "heroku-nuxtjs-adapter",
   "version": "1.0.0",
-  "description": "Adapter to build & run Next.js on Heroku",
+  "description": "Adapter to build & run Nuxt.js on Heroku",
   "scripts": {
-    "start": "npm run start --prefix nextjs"
+	"build": "nuxt build",
+    "start": "nuxt start",
   },
   "cacheDirectories": [
-    "nextjs/node_modules"
+    "nuxtjs/node_modules"
   ]
 }
 HEREDOC
